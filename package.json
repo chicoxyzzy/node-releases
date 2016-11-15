@@ -1,8 +1,7 @@
 {
   "name": "node-releases",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Node.js releases data",
-  "main": "index.js",
   "scripts": {
     "update": "node index.js"
   },
