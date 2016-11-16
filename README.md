@@ -24,7 +24,7 @@ npm run fetch
 ```
 This npm script will download new data to `data/raw` directory.
 
-## Processing data
+### Processing data
 ```bash
 npm run process
 ```
