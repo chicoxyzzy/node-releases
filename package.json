@@ -1,9 +1,11 @@
 {
   "name": "node-releases",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Node.js releases data",
   "scripts": {
-    "update": "node index.js"
+    "build": "npm run fetch && npm run process",
+    "fetch": "node scripts/fetch.js",
+    "process": "node scripts/process.js"
   },
   "repository": {
     "type": "git",
@@ -14,5 +16,9 @@
     "releases"
   ],
   "author": "Sergey Rubanov <chi187@gmail.com>",
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "lodash.pick": "^4.4.0",
+    "semver": "^5.3.0"
+  }
 }
