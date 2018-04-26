@@ -24,4 +24,4 @@ var processedData = fs.readdirSync(path.join(__dirname, '../data/raw')).reduce(f
   return 0;
 });
 
-fs.writeFileSync(path.join(__dirname, '../data/processed/envs.json'), JSON.stringify(processedData));
+fs.writeFileSync(path.join(__dirname, '../data/processed/envs.json'), JSON.stringify(processedData, null, 2));
