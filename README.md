@@ -22,7 +22,7 @@ This is a build script which fetches data from web, processes it and saves proce
 ```bash
 npm run fetch
 ```
-This npm script will download new data to `data/raw` directory.
+This npm script will download new data to `data/raw` directory. Also it'll download Node.js release schedule into `release-schedule` folder.
 
 ### Processing data
 ```bash
