@@ -588,5 +588,53 @@
     "version": "10.0.0",
     "date": "2018-04-24",
     "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "10.1.0",
+    "date": "2018-05-08",
+    "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "10.2.0",
+    "date": "2018-05-23",
+    "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "10.3.0",
+    "date": "2018-05-29",
+    "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "10.4.0",
+    "date": "2018-06-06",
+    "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "10.5.0",
+    "date": "2018-06-20",
+    "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "10.6.0",
+    "date": "2018-07-04",
+    "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "10.7.0",
+    "date": "2018-07-18",
+    "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "10.8.0",
+    "date": "2018-08-01",
+    "lts": false
   }
 ]
