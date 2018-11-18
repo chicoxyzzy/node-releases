@@ -684,5 +684,11 @@
     "version": "11.1.0",
     "date": "2018-10-30",
     "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "11.2.0",
+    "date": "2018-11-15",
+    "lts": false
   }
 ]
