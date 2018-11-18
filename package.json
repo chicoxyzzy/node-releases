@@ -1,6 +1,6 @@
 {
   "name": "node-releases",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js releases data",
   "scripts": {
     "build": "npm run fetch && npm run process",
