@@ -387,6 +387,12 @@
   },
   {
     "name": "nodejs",
+    "version": "6.17.0",
+    "date": "2019-02-28",
+    "lts": "Boron"
+  },
+  {
+    "name": "nodejs",
     "version": "7.0.0",
     "date": "2016-10-25",
     "lts": false
