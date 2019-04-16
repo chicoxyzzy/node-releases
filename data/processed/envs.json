@@ -555,6 +555,12 @@
   },
   {
     "name": "nodejs",
+    "version": "8.16.0",
+    "date": "2019-04-16",
+    "lts": "Carbon"
+  },
+  {
+    "name": "nodejs",
     "version": "9.0.0",
     "date": "2017-10-31",
     "lts": false
@@ -803,6 +809,12 @@
     "name": "nodejs",
     "version": "11.13.0",
     "date": "2019-03-28",
+    "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "11.14.0",
+    "date": "2019-04-10",
     "lts": false
   }
 ]
