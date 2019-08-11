@@ -876,5 +876,11 @@
     "version": "12.7.0",
     "date": "2019-07-23",
     "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "12.8.0",
+    "date": "2019-08-06",
+    "lts": false
   }
 ]
