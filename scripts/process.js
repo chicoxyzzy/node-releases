@@ -15,7 +15,8 @@ var processedData = fs.readdirSync(path.join(__dirname, '../data/raw')).reduce(f
         name: envName,
         version: env.version.substr(1),
         date: env.date,
-        lts: env.lts
+        lts: env.lts,
+        security: env.security
       };
     }));
 }, []).sort(function (a, b) {
