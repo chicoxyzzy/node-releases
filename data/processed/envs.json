@@ -888,5 +888,11 @@
     "version": "12.9.0",
     "date": "2019-08-20",
     "lts": false
+  },
+  {
+    "name": "nodejs",
+    "version": "12.10.0",
+    "date": "2019-09-04",
+    "lts": false
   }
 ]
