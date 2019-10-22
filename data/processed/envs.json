@@ -1051,5 +1051,12 @@
     "date": "2019-10-21",
     "lts": "Erbium",
     "security": false
+  },
+  {
+    "name": "nodejs",
+    "version": "13.0.0",
+    "date": "2019-10-10",
+    "lts": false,
+    "security": false
   }
 ]
