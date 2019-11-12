@@ -1065,5 +1065,12 @@
     "date": "2019-10-10",
     "lts": false,
     "security": false
+  },
+  {
+    "name": "nodejs",
+    "version": "13.1.0",
+    "date": "2019-11-05",
+    "lts": false,
+    "security": false
   }
 ]
