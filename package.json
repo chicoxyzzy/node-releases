@@ -17,7 +17,8 @@
   ],
   "author": "Sergey Rubanov <chi187@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "semver": "^6.3.0"
   }
 }
