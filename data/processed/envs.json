@@ -1289,5 +1289,12 @@
     "date": "2020-07-15",
     "lts": false,
     "security": false
+  },
+  {
+    "name": "nodejs",
+    "version": "14.7.0",
+    "date": "2020-07-29",
+    "lts": false,
+    "security": false
   }
 ]
