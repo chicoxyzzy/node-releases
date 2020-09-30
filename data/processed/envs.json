@@ -1331,5 +1331,12 @@
     "date": "2020-09-22",
     "lts": false,
     "security": false
+  },
+  {
+    "name": "nodejs",
+    "version": "14.13.0",
+    "date": "2020-09-29",
+    "lts": false,
+    "security": false
   }
 ]
