@@ -1138,6 +1138,13 @@
   },
   {
     "name": "nodejs",
+    "version": "12.19.0",
+    "date": "2020-10-06",
+    "lts": "Erbium",
+    "security": false
+  },
+  {
+    "name": "nodejs",
     "version": "13.0.0",
     "date": "2019-10-22",
     "lts": false,
