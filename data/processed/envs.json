@@ -893,6 +893,13 @@
   },
   {
     "name": "nodejs",
+    "version": "10.23.0",
+    "date": "2020-10-27",
+    "lts": "Dubnium",
+    "security": false
+  },
+  {
+    "name": "nodejs",
     "version": "11.0.0",
     "date": "2018-10-23",
     "lts": false,
@@ -1351,6 +1358,13 @@
     "version": "14.14.0",
     "date": "2020-10-15",
     "lts": false,
+    "security": false
+  },
+  {
+    "name": "nodejs",
+    "version": "14.15.0",
+    "date": "2020-10-27",
+    "lts": "Fermium",
     "security": false
   },
   {
