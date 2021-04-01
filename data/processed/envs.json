@@ -1492,5 +1492,12 @@
     "date": "2021-03-17",
     "lts": false,
     "security": false
+  },
+  {
+    "name": "nodejs",
+    "version": "15.13.0",
+    "date": "2021-03-31",
+    "lts": false,
+    "security": false
   }
 ]
