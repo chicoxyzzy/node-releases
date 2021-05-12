@@ -1404,6 +1404,13 @@
   },
   {
     "name": "nodejs",
+    "version": "14.17.0",
+    "date": "2021-05-11",
+    "lts": "Fermium",
+    "security": false
+  },
+  {
+    "name": "nodejs",
     "version": "15.0.0",
     "date": "2020-10-20",
     "lts": false,
