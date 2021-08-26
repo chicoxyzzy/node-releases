@@ -1569,5 +1569,12 @@
     "date": "2021-08-18",
     "lts": false,
     "security": false
+  },
+  {
+    "name": "nodejs",
+    "version": "16.8.0",
+    "date": "2021-08-25",
+    "lts": false,
+    "security": false
   }
 ]
