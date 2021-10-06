@@ -13,6 +13,6 @@
   "author": "Sergey Rubanov <chi187@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "semver": "^6.3.0"
+    "semver": "^7.3.5"
   }
 }
