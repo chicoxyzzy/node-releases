@@ -3,9 +3,7 @@
   "version": "1.1.77",
   "description": "Node.js releases data",
   "scripts": {
-    "build": "npm run fetch && npm run process",
-    "fetch": "node scripts/fetch.js",
-    "process": "node scripts/process.js"
+    "build": "node scripts/build.js"
   },
   "repository": "chicoxyzzy/node-releases",
   "keywords": [
