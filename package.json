@@ -3,7 +3,7 @@
   "version": "2.0.10",
   "description": "Node.js releases data",
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.mjs"
   },
   "repository": "chicoxyzzy/node-releases",
   "keywords": [
