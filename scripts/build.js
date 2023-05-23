@@ -35,7 +35,8 @@ async function processVersions() {
         version: env.version.substr(1),
         date: env.date,
         lts: env.lts,
-        security: env.security
+        security: env.security,
+        v8: env.v8
       };
     })
     .sort((a, b) => {
