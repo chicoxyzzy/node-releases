@@ -2,8 +2,9 @@
   "name": "node-releases",
   "version": "2.0.10",
   "description": "Node.js releases data",
+  "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.js"
   },
   "repository": "chicoxyzzy/node-releases",
   "keywords": [
