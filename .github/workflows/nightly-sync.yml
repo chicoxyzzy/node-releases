@@ -14,6 +14,9 @@ jobs:
           node-version: "20.x"
           cache: npm
 
+      - name: Set safe directory
+        run: git config --global --add safe.directory /github/workspace
+
       - name: Install
         run: npm ci
 
