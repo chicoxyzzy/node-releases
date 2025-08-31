@@ -30,7 +30,7 @@ jobs:
           author_email: action@github.com
           message: "feat: Nightly Sync"
 
-      - name: Tag a new release
+      - name: Bump the version
         run:
           npm version patch
 
