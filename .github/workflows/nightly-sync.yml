@@ -33,7 +33,6 @@ jobs:
       - name: Tag a new release
         run:
           npm version patch
-          git push --follow-tags
 
       - name: Push changes
         # Only run this on the main nodejs repo and not forks
