@@ -15,7 +15,7 @@ jobs:
           cache: npm
 
       - name: Set safe directory
-        run: git config --global --add safe.directory /github/workspace
+        run: git config --global --add safe.directory /.github/workspace
 
       - name: Install
         run: npm ci
@@ -30,17 +30,18 @@ jobs:
           author_email: action@github.com
           message: "feat: Nightly Sync"
 
-      - name: Push changes
-        # Only run this on the main nodejs repo and not forks
-        if: github.repository == 'chicoxyzzy/node-releases'
-        uses: ad-m/github-push-action@v0.5.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Tag a new release
         run:
           npm version patch
           git push --follow-tags
+
+      - name: Push changes
+        # Only run this on the main nodejs repo and not forks
+        if: github.repository == 'chicoxyzzy/node-releases'
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tags: true
 
       - name: Publish to npm
         if: github.repository == 'chicoxyzzy/node-releases'
