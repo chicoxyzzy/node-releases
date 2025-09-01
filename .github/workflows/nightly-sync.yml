@@ -26,6 +26,7 @@ jobs:
       - uses: dorny/paths-filter@v3
         id: changes
         with:
+          base: HEAD
           filters: |
             data:
               - 'data/**'
