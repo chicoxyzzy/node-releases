@@ -23,7 +23,15 @@ jobs:
       - name: Collect latest releases
         run: npm run build
 
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            data:
+              - 'data/**'
+
       - name: Commit changes
+        if: steps.changes.outputs.data == 'true'
         uses: EndBug/add-and-commit@v4
         with:
           author_name: GitHub Action
@@ -31,19 +39,21 @@ jobs:
           message: "feat: Nightly Sync"
 
       - name: Bump the version
+        if: steps.changes.outputs.data == 'true'
         run:
           npm version patch
 
       - name: Push changes
-        # Only run this on the main nodejs repo and not forks
-        if: github.repository == 'chicoxyzzy/node-releases'
+        # Only run this on the main nodejs repo and not forks, and only if there are changes to the actual data
+        if: ${{ (github.repository == 'chicoxyzzy/node-releases') && (steps.changes.outputs.data == 'true') }}
         uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           tags: true
 
       - name: Publish to npm
-        if: github.repository == 'chicoxyzzy/node-releases'
+        # Only run this on the main nodejs repo and not forks, and only if there are changes to the actual data
+        if: ${{ (github.repository == 'chicoxyzzy/node-releases') && (steps.changes.outputs.data == 'true') }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish
