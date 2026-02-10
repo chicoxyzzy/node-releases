@@ -14,6 +14,7 @@
     "nodejs",
     "releases"
   ],
+  "main": "index.js",
   "author": "Sergey Rubanov <chi187@gmail.com>",
   "license": "MIT",
   "devDependencies": {
