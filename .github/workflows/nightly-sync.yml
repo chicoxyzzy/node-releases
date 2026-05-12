@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 3 * * *' # run daily at 3am
   workflow_dispatch:
+    inputs:
+      publish_only:
+        description: 'Publish current version to npm without syncing data'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -17,8 +22,8 @@ jobs:
   checks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: '22'
           cache: npm
@@ -28,9 +33,11 @@ jobs:
         run: npm ci
 
       - name: Collect latest releases
+        if: inputs.publish_only != true
         run: npm run build
 
       - name: Detect data changes
+        if: inputs.publish_only != true
         id: changes
         run: |
           if [ -n "$(git status --porcelain -- data)" ]; then
@@ -61,8 +68,8 @@ jobs:
         run: git push --follow-tags
 
       - name: Publish to npm
-        # Only run on the main repo and not forks
-        if: ${{ github.repository == 'chicoxyzzy/node-releases' && steps.changes.outputs.changed == 'true' }}
+        # Only run on the main repo and not forks; runs on data changes OR manual publish_only
+        if: ${{ github.repository == 'chicoxyzzy/node-releases' && (steps.changes.outputs.changed == 'true' || inputs.publish_only == true) }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --provenance --access public
