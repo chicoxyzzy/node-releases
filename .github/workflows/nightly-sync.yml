@@ -27,7 +27,6 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-          registry-url: 'https://registry.npmjs.org'
 
       - name: Install
         run: npm ci
@@ -69,7 +68,6 @@ jobs:
 
       - name: Publish to npm
         # Only run on the main repo and not forks; runs on data changes OR manual publish_only
+        # Auth via npm trusted publishing (OIDC) — see id-token: write permission above
         if: ${{ github.repository == 'chicoxyzzy/node-releases' && (steps.changes.outputs.changed == 'true' || inputs.publish_only == true) }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --provenance --access public
