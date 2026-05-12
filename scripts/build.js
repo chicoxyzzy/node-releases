@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import semver from 'semver';
 
 function writeJSON(file, data) {
-  fs.writeFileSync(new URL(file, import.meta.url), JSON.stringify(data));
+  fs.writeFileSync(new URL(file, import.meta.url), JSON.stringify(data, null, 2) + '\n');
 }
 
 const [ dist, schedule ] = await Promise.all([
