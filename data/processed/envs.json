@@ -2902,5 +2902,13 @@
     "lts": false,
     "security": false,
     "v8": "14.6.202.34"
+  },
+  {
+    "name": "nodejs",
+    "version": "26.2.0",
+    "date": "2026-05-20",
+    "lts": false,
+    "security": false,
+    "v8": "14.6.202.34"
   }
 ]
