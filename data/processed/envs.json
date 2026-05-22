@@ -2809,6 +2809,14 @@
   },
   {
     "name": "nodejs",
+    "version": "24.16.0",
+    "date": "2026-05-21",
+    "lts": "Krypton",
+    "security": false,
+    "v8": "13.6.233.17"
+  },
+  {
+    "name": "nodejs",
     "version": "25.0.0",
     "date": "2025-10-15",
     "lts": false,
