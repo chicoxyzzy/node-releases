@@ -3062,5 +3062,13 @@
     "lts": "Lithium",
     "security": false,
     "v8": "14.6.202.34"
+  },
+  {
+    "name": "nodejs",
+    "version": "27.0.0-alpha.0.0.0",
+    "date": "2026-10-29",
+    "lts": false,
+    "security": false,
+    "v8": "15.6.75.25"
   }
 ]
