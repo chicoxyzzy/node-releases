@@ -19,9 +19,6 @@
   ],
   "author": "Sergey Rubanov <chi187@gmail.com>",
   "license": "MIT",
-  "engines": {
-    "node": ">=18"
-  },
   "devDependencies": {
     "semver": "^7.3.5"
   }
