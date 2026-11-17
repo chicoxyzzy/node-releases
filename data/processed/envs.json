@@ -3076,6 +3076,15 @@
     "version": "27.0.0-alpha.0.1.0",
     "date": "2026-11-12",
     "lts": false,
-    "security": false
+    "security": false,
+    "v8": "15.6.75.50"
+  },
+  {
+    "name": "nodejs",
+    "version": "27.0.0-alpha.0.1.1",
+    "date": "2026-11-16",
+    "lts": false,
+    "security": false,
+    "v8": "15.6.75.50"
   }
 ]
